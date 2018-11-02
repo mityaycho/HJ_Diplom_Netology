@@ -178,7 +178,7 @@ function sendMask(response) {
 		if (response.event === 'mask') {
 			console.log('Событие mask...');
 			mask.classList.remove('hidden');
-			clearCanvas();
+			//clearCanvas();
 			loadMask(response.url)
 				.then(() => maskSize())
 				.then(() => console.log('Mask loaded and resized!'));
