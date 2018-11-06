@@ -87,6 +87,7 @@ canvas.addEventListener("mousedown", event => {
 canvas.addEventListener("mouseup", () => {
 	curves = [];
 	drawing = false;
+	sendMask(response);
 });
 
 // Так же очищаем массив с данными при покидании мышки, зоны холста чтобы начать рисовать с любого места
