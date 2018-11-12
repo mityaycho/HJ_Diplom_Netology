@@ -83,7 +83,7 @@ function getShareData(id) {
 	console.log("TCL: getShareData -> sessionStorage.id", id);
 	console.log(`Запущена функция getShareData()`);
 	const xhr = new XMLHttpRequest();
-	xhr.open("GET", `https://neto-api.herokuapp.com/pic/${sessionStorage.id || id}`);
+	xhr.open("GET", `https://neto-api.herokuapp.com/pic/${id}`);
 	xhr.addEventListener('load', () => {
 		if (xhr.status === 200) {
 			loadShareData(JSON.parse(xhr.responseText));
